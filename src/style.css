@@ -95,6 +95,14 @@ button:focus-visible {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  padding-top: 50px;
+}
+
+#configuration {
+  z-index: 1;
+  position: fixed;
+  background: white;
+  top: 0;
 }
 
 .tabs li.is-active a {
