@@ -6,7 +6,7 @@ export default class StudentsStorage {
   }
 
   getAll() {
-    return this.storage.get("students").sort((a, b) => a.value.localeCompare(b.value)) ?? [];
+    return (this.storage.get("students") ?? []).sort((a, b) => a.value.localeCompare(b.value)) ?? [];
   }
 
   add(student) {
